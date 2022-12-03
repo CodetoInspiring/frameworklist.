@@ -6,21 +6,30 @@ export default function About() {
     <Layout pageTitle="About">
       <div className="max-w-5xl h-tampilan m-auto">
         <div className="hero bg-parrent">
-          <div className="hero-content text-center">
-            <div className="max-w-3xl">
-              <h1 className="text-5xl font-bold p-4">Framework App</h1>
+          <div className="hero-content flex-col text-center">
+            <h1 className="text-5xl font-bold p-4">Framework App</h1>
+            <div className="flex flex-col items-center md:flex-row">
               <img
                 alt="Student"
                 src="https://yukcoding.id/wp-content/uploads/2021/11/JavaScript-Frameworks.jpg"
-                className="w-2/3 mb-4 m-auto object-cover rounded-2xl border-amber-700 border-2"
+                className="md:w-1/2 mb-4 object-cover rounded-2xl border-amber-700 border-2"
               />
-              <p>
-                Frameworks are a set of libraries that are used to build web
-                applications. Frameworks are used to make the development
-                process easier and faster. Frameworks are also used to make the
-                code more readable and easier to maintain. Frameworks are also
-                used to make the code more secure and easier to test.
-              </p>
+              <div className="md:w-1/2 p-4">
+                <p className="text-justify">
+                  Frameworks are a set of libraries that are used to build web
+                  applications. Frameworks are used to make the development
+                  process easier and faster. Frameworks are also used to make
+                  the code more readable and easier to maintain. This
+                  application is made by.
+                </p>
+                <ul className="text-left py-2">
+                  <li>kelompok 4:</li>
+                  <li>Lukman Ernandi 21120119130049</li>
+                  <li>Haickal Fattih Pratama 21120119140131</li>
+                  <li>Peggy Raihannisa Zakiyyahannas 21120119130111</li>
+                  <li>Hilmi Ahmad Dhiya`ulhaq 21120119130048</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

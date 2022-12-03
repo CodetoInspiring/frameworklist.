@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { Alert } from "../components/alert";
 import ButtonLink from "../components/buttonLink";
 import Layout from "../components/layout";
 
@@ -24,12 +25,18 @@ export default function AddNew() {
     axios
       .post("https://6389fd1dc5356b25a20e871a.mockapi.io/framework", data)
       .then((res) => {
-        console.log(res);
+        Alert("Success", "Framework has been added", "success");
+        setData({
+          name: "",
+          description: "",
+          github: "",
+          doc: "",
+          image: "",
+        });
       })
       .catch((err) => {
-        console.log(err);
+        Alert("Error", "Something went wrong", "error");
       });
-    console.log(data);
   };
 
   return (
