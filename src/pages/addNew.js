@@ -56,6 +56,7 @@ export default function AddNew() {
                 className="w-full input rounded-lg border-gray-200 p-3 text-sm"
                 placeholder="Framework Name"
                 onChange={changeData}
+                value={data.name}
               />
             </div>
 
@@ -70,6 +71,7 @@ export default function AddNew() {
                 placeholder="Description"
                 rows="8"
                 onChange={changeData}
+                value={data.description}
               ></textarea>
             </div>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -84,6 +86,7 @@ export default function AddNew() {
                   className="input w-full rounded-lg border-gray-200 p-3 text-sm"
                   placeholder="Link Doc"
                   onChange={changeData}
+                  value={data.doc}
                 />
               </div>
 
@@ -98,6 +101,7 @@ export default function AddNew() {
                   className="input w-full rounded-lg border-gray-200 p-3 text-sm"
                   placeholder="Link Github"
                   onChange={changeData}
+                  value={data.github}
                 />
               </div>
             </div>
@@ -112,6 +116,7 @@ export default function AddNew() {
                 className="input w-full rounded-lg border-gray-200 p-3 text-sm"
                 placeholder="Image Link"
                 onChange={changeData}
+                value={data.image}
               />
             </div>
             <div className="mt-4">
